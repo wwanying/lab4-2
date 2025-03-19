@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>我的網站</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>歡迎來到我的網站</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">關於我們</a></li>
+                <li><a href="#services">服務</a></li>
+                <li><a href="#contact">聯絡我們</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section id="about">
+        <h2>關於我們</h2>
+        <p>這是一個簡單但完整的網站示例，包含 HTML、CSS 和 JavaScript。</p>
+    </section>
+    
+    <section id="services">
+        <h2>我們的服務</h2>
+        <p>我們提供各種網站開發服務，幫助您打造專業網站。</p>
+    </section>
+    
+    <section id="contact">
+        <h2>聯絡我們</h2>
+        <form id="contact-form">
+            <label for="name">姓名：</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="email">電子郵件：</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="message">訊息：</label>
+            <textarea id="message" name="message" required></textarea>
+            
+            <button type="submit">送出</button>
+        </form>
+    </section>
+    
+    <footer>
+        <p>&copy; 2025 我的網站. 版權所有。</p>
+    </footer>
+    
+    <script src="script.js"></script>
+</body>
+</html>
