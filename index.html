@@ -30,7 +30,7 @@
     
     <section id="contact">
         <h2>聯絡我們</h2>
-        <form id="contact-form">
+        <form id="contact-form" action="mailto:eileen94719@gmail.com" method="post" enctype="text/plain">
             <label for="name">姓名：</label>
             <input type="text" id="name" name="name" required>
             
@@ -39,10 +39,8 @@
             
             <label for="message">訊息：</label>
             <textarea id="message" name="message" required></textarea>
-            <input type="hidden" name="to" value="eileen94719@gmail.com">
-            <button type="submit">送出</button>
             
-    
+            <button type="submit">送出</button>
         </form>
     </section>
     
@@ -53,12 +51,7 @@
     <script src="script.js"></script>
 </body>
 </html>
-        </form>
-    </section>
-    
-    <footer>
-        <p>&copy; 2025 我的網站. 版權所有。</p>
-    </footer>
+
     
     <script src="script.js"></script>
 </body>
