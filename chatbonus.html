@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title多階層式選單</title>
+</head>
+<body>
+    <ul>
+        <li><a href="#">美食</a>
+            <ul>
+                <li><a href="#">千層蛋糕</a>
+                    <ul>
+                        <li><a href="#">草莓</a></li>
+                        <li><a href="#">檸檬</a></li>
+                        <li><a href="#">香草</a></li>
+                        <li><a href="#">巧克力</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">可麗露</a>
+                    <ul>
+                        <li><a href="#">焙茶</a></li>
+                        <li><a href="#">檸檬</a></li>
+                        <li><a href="#">原味</a></li>
+                        <li><a href="#">巧克力</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">塔</a>
+                    <ul>
+                        <li><a href="#">草莓塔</a></li>
+                        <li><a href="#">檸檬塔</a></li>
+                        <li><a href="#">綜合水果塔</a></li>
+                        <li><a href="#">巧克力塔</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+        <li><a href="#">減肥計劃</a>
+            <ul>
+                <li><a href="#">飲食</a>
+                    <ul>
+                        <li><a href="#">油</a>
+                            <ul>
+                                <li><a href="#">堅果</a></li>
+                                <li><a href="#">酪梨</a></li>
+                                <li><a href="#">苦茶油</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">膳食纖維</a>
+                            <ul>
+                                <li><a href="#">地瓜葉</a></li>
+                                <li><a href="#">苦瓜</a></li>
+                                <li><a href="#">大陸妹</a></li>
+                                <li><a href="#">小黃瓜</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">蛋白質</a>
+                            <ul>
+                                <li><a href="#">雞蛋</a></li>
+                                <li><a href="#">高蛋白</a></li>
+                                <li><a href="#">雞胸肉</a></li>
+                                <li><a href="#">豆腐</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">澱粉</a>
+                            <ul>
+                                <li><a href="#">地瓜</a></li>
+                                <li><a href="#">馬鈴薯</a></li>
+                                <li><a href="#">糙米</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li><a href="#">運動</a>
+                    <ul>
+                        <li><a href="#">跑步</a></li>
+                        <li><a href="#">跳繩</a></li>
+                        <li><a href="#">游泳</a></li>
+                        <li><a href="#">瑜珈</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+        <li><a href="#">國家</a>
+            <ul>
+                <li><a href="#">加拿大</a></li>
+                <li><a href="#">澳洲</a></li>
+                <li><a href="#">葡萄牙</a></li>
+            </ul>
+        </li>
+    </ul>
+</body>
+<style>
+    /* 主選單區域 */
+    ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        background-color: #ffffff;
+        display: flex;
+        border-bottom: 3px solid #ddd;
+    }
+    
+    li {
+        position: relative;
+    }
+
+    /* 主選單項目樣式 */
+    li > a {
+        display: block;
+        padding: 15px 25px;
+        text-decoration: none;
+        color: black;
+        background-color: #7cece7;
+        font-weight: bold;
+    }
+    
+    li > a:hover {
+        background-color: #d9733d;
+        color: white;
+    }
+
+    /* 第一層下拉選單 */
+    ul ul {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        background-color: wheat;
+        border: 1px solid #ddd;
+        min-width: 180px;
+        padding: 0;
+    }
+
+    ul ul li {
+        display: block;
+        width: 100%;
+    }
+
+    ul ul a {
+        padding: 12px;
+        display: block;
+        background-color: white;
+        color: black;
+    }
+
+    ul ul a:hover {
+        background-color: #f2f2f2;
+        color: #d9733d;
+    }
+
+    /* 第二層子選單 */
+    ul ul ul {
+        position: absolute;
+        top: 0;
+        left: 100%;
+        display: none;
+    }
+
+    /* 顯示子選單 */
+    li:hover > ul {
+        display: block;
+    }
+</style>
+</html>
